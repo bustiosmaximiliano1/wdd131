@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 country page about Argentina with responsive images, data, weather, and wind chill.">
+  <meta name="author" content="Maximiliano Bustios">
+  <title>WDD 131 - Argentina Country Page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Argentina</h1>
+  </header>
+
+  <main>
+    <div class="hero">
+      <picture>
+        <source srcset="images/argentina-large.webp" media="(min-width: 700px)">
+        <img src="images/argentina-small.webp" alt="Scenic view of Argentina landscape" width="500" height="750">
+      </picture>
+
+      <section class="card data">
+        <h2>Data</h2>
+        <p><strong>Area:</strong> 2,780,400 sq km</p>
+        <p><strong>Population:</strong> 46,000,000</p>
+        <p><strong>Capital:</strong> Buenos Aires</p>
+        <p><strong>Languages:</strong> Spanish</p>
+        <p><strong>Currency:</strong> Argentine Peso</p>
+        <p><strong>Time Zone:</strong> UTC-3</p>
+        <p><strong>Calling Code:</strong> +54</p>
+        <p><strong>Internet TLD:</strong> .ar</p>
+      </section>
+
+      <section class="card weather">
+        <h2>Weather</h2>
+        <img src="images/weather.svg" alt="Partly cloudy weather icon" class="weather-icon">
+        <p><strong>Temperature:</strong> <span id="temperature">10</span> °C</p>
+        <p><strong>Conditions:</strong> Partly Cloudy</p>
+        <p><strong>Wind:</strong> <span id="wind-speed">5</span> km/h</p>
+        <p><strong>Wind Chill:</strong> <span id="wind-chill"></span></p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span>Maximiliano Bustios, Argentina</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
