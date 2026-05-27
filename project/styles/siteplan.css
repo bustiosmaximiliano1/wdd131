@@ -1,0 +1,135 @@
+:root {
+  --primary-color: #4f6f35;
+  --accent-color: #d9a441;
+  --background-color: #f7f3e8;
+  --text-color: #222;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+header,
+footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 1.5rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+section {
+  background-color: var(--white);
+  margin: 1rem 0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 8px solid var(--primary-color);
+}
+
+h2 {
+  color: var(--primary-color);
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+.color-box {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 6px;
+}
+
+.primary {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.accent {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+.background {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: 1px solid #ccc;
+}
+
+.heading-example {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.body-example {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.wireframe {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0 2rem;
+}
+
+.wireframe div {
+  border: 2px solid var(--primary-color);
+  background-color: var(--background-color);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.mobile-wireframe {
+  max-width: 350px;
+}
+
+.desktop-wireframe {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.desktop-header,
+.desktop-hero,
+.desktop-callout,
+.desktop-footer {
+  grid-column: 1 / 4;
+}
+
+@media screen and (max-width: 600px) {
+  .desktop-wireframe {
+    grid-template-columns: 1fr;
+  }
+
+  .desktop-header,
+  .desktop-hero,
+  .desktop-callout,
+  .desktop-footer {
+    grid-column: auto;
+  }
+}
