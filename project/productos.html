@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Productos disponibles en Dietética Deseret."
+    />
+    <title>Dietética Deseret | Productos</title>
+
+    <link rel="stylesheet" href="styles/project.css" />
+    <script src="scripts/project.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-content">
+        <a class="logo" href="index.html">Dietética Deseret</a>
+
+        <button id="menu" aria-label="Abrir menú"></button>
+
+        <nav id="navigation">
+          <a href="index.html">Inicio</a>
+          <a href="productos.html" class="active">Productos</a>
+          <a href="contacto.html">Contacto</a>
+          <a href="referencias.html">Referencias</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1>Productos</h1>
+
+      <div class="filter-buttons">
+        <button data-category="all">Todos</button>
+        <button data-category="Frutos Secos">Frutos Secos</button>
+        <button data-category="Semillas">Semillas</button>
+        <button data-category="Yerba Mate">Yerba Mate</button>
+        <button data-category="Especias">Especias</button>
+      </div>
+
+      <section id="products-container" class="card-grid"></section>
+    </main>
+
+    <footer>
+      <p>&copy;<span id="currentyear"></span> Dietética Deseret</p>
+      <p id="lastModified"></p>
+      <p><a href="referencias.html">Referencias</a></p>
+    </footer>
+  </body>
+</html>

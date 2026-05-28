@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contacto de Dietética Deseret." />
+    <meta name="author" content="Maximiliano Bustios" />
+    <title>Dietética Deseret | Contacto</title>
+
+    <link rel="stylesheet" href="styles/project.css" />
+    <script src="scripts/project.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-content">
+        <a class="logo" href="index.html">Dietética Deseret</a>
+        <button id="menu" aria-label="Abrir menú"></button>
+
+        <nav id="navigation">
+          <a href="index.html">Inicio</a>
+          <a href="productos.html">Productos</a>
+          <a href="contacto.html" class="active">Contacto</a>
+          <a href="referencias.html">Referencias</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1>Contacto</h1>
+
+      <section class="contact-layout">
+        <div class="contact-info">
+          <h2>Visitá nuestra tienda</h2>
+          <p>
+            <strong>Dirección:</strong> Pueyrredón 717, Buenos Aires, Argentina
+          </p>
+          <p><strong>Horario:</strong> Lunes a sábado de 9:00 a 20:00</p>
+          <p><strong>WhatsApp:</strong> +54 9 11 0000-0000</p>
+          <p><strong>Instagram:</strong> @dieteticadeseret</p>
+        </div>
+
+        <form id="contact-form">
+          <h2>Envianos un mensaje</h2>
+
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="interest">Interés principal</label>
+          <select id="interest" name="interest">
+            <option value="Productos">Productos</option>
+            <option value="Promociones">Promociones</option>
+            <option value="Horarios">Horarios</option>
+            <option value="Otro">Otro</option>
+          </select>
+
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="button">Enviar mensaje</button>
+
+          <p id="form-response"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy;<span id="currentyear"></span> 🌿 Dietética Deseret 🌿 Maximiliano
+        Bustios
+      </p>
+      <p id="lastModified"></p>
+      <p><a href="referencias.html">Referencias</a></p>
+    </footer>
+  </body>
+</html>
