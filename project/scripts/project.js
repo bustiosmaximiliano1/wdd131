@@ -70,7 +70,13 @@ function setupNavigation() {
 function createCard(item) {
   return `
     <article class="card">
-      <img src="${item.image}" alt="${item.title || item.name}" loading="lazy">
+      <img 
+        src="${item.image}" 
+        alt="${item.title || item.name}" 
+        loading="lazy"
+        width="600"
+        height="400"
+      >
       <div class="card-content">
         <h3>${item.title || item.name}</h3>
         <p>${item.description}</p>
