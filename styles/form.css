@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+  background-color: #f7fff7;
+}
+
+header,
+footer {
+  background-color: #3b0035;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  max-width: 600px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
+form {
+  background-color: #d8d0d8;
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+
+label,
+legend {
+  display: block;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.4rem;
+  font-size: 1rem;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+fieldset label {
+  margin-top: 0.5rem;
+  font-weight: 700;
+}
+
+fieldset input[type="checkbox"],
+.rating input[type="radio"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.rating label {
+  text-align: center;
+  font-weight: 700;
+}
+
+span {
+  color: navy;
+  font-size: 0.9rem;
+}
+
+input[type="submit"] {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid #777;
+  background-color: #fff;
+}
+
+input[type="submit"]:hover {
+  background-color: #3b0035;
+  color: white;
+}
+
+.confirmation {
+  background-color: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.confirmation a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #3b0035;
+  font-weight: 700;
+}

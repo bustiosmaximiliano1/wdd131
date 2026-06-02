@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Product review form assignment for WDD 131.">
+  <meta name="author" content="Maximiliano Bustios">
+  <title>Product Review</title>
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <form method="get" action="review.html">
+      <label for="product">Product Name</label>
+      <select id="product" name="product" required>
+        <option value="" disabled selected>Select a Product ...</option>
+      </select>
+
+      <fieldset>
+        <legend>Overall Rating</legend>
+        <div class="rating">
+          <label for="one">☆<input type="radio" id="one" name="rating" value="1" required></label>
+          <label for="two">☆☆<input type="radio" id="two" name="rating" value="2"></label>
+          <label for="three">☆☆☆<input type="radio" id="three" name="rating" value="3"></label>
+          <label for="four">☆☆☆☆<input type="radio" id="four" name="rating" value="4"></label>
+          <label for="five">☆☆☆☆☆<input type="radio" id="five" name="rating" value="5"></label>
+        </div>
+      </fieldset>
+
+      <label for="install-date">Date of Installation</label>
+      <input type="date" id="install-date" name="install-date" required>
+
+      <fieldset>
+        <legend>Which features did you find useful in the product?<br><span>(Check all that apply)</span></legend>
+
+        <label><input type="checkbox" id="durability" name="features" value="durability"> Durability</label>
+        <label><input type="checkbox" id="ease" name="features" value="ease-of-use"> Ease of Use</label>
+        <label><input type="checkbox" id="performance" name="features" value="performance"> Performance</label>
+        <label><input type="checkbox" id="design" name="features" value="design"> Design</label>
+      </fieldset>
+
+      <label for="review">Written Review <span>(Optional)</span></label>
+      <textarea id="review" name="review" rows="5"></textarea>
+
+      <label for="username">Your Name <span>(Optional)</span></label>
+      <input type="text" id="username" name="username">
+
+      <input type="submit" value="Post Review">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span>Maximiliano Bustios,Argentina</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
